@@ -143,7 +143,7 @@ input[type="email"]:focus {
   font-weight: 600;
 }
 
-/* 
+
 .gallery1 {
   display: flex;
   gap: 1rem;
@@ -165,12 +165,12 @@ input[type="email"]:focus {
   background: url("./assets/img/wideimg2.jpg");
   background-position: center;
   background-size: cover;
-} */
+} 
 
-/* 
+ 
 .gallery1 > div:hover {
   flex: 6;
-} */
+}
 
 .sample-card {
   background-color: #dfddd8;
