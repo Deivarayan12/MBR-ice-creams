@@ -44,10 +44,13 @@ img {
 
 /*=============== GALLERY ===============*/
 .gallery {
-  height: 100vh;
+  height: auto;
   display: grid;
   align-content: center;
   justify-content: center;
+  background-color: #91d6cf;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .gallery__card {
