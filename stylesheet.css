@@ -332,3 +332,28 @@ input[type="email"]:focus {
   object-fit: cover;
 }
 
+.imgbg1{
+  background-image: url("./assests/cms-banner-1.jpg");
+  background-size: cover;
+  height: 220px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  font-size: 14px;
+  
+}
+
+
+.imgbg2{
+  background-image: url("./assests/cms-banner-2.jpg");
+  background-size: cover;
+  height: 220px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  font-size: 14px;
+}
