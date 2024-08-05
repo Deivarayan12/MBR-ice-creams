@@ -57,5 +57,5 @@ fetch("https://script.google.com/macros/s/AKfycbwZwDaWhg5SrIwCod1nD-ATY4WZwJswXC
     })
     .catch(error => {
         console.error('Error fetching data:', error);
-        // loader.style.display = "none";
+        
     });

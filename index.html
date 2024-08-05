@@ -16,6 +16,13 @@
         <script src="https://kit.fontawesome.com/8d2ab55a4d.js" crossorigin="anonymous"></script>
         <!-- css links -->
         <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+          .nav-link{
+              margin-bottom: 5px;
+              margin-right: 5px;
+          }
+      </style>
     </head>
 <body>
     <!-- navbar Pefix -->
@@ -43,8 +50,10 @@
     </div>
     <!-- navbar -->
     <nav style="background-color: #91D6CF;" class="navbar navbar-expand-md navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
+      <div class="container px-2">
+        <a class="navbar-brand" href="#">
+          <img src="./assests/images-removebg-preview.png" height="100" width="100"/>
+        </a>
         <div class="d-block d-md-none" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -70,7 +79,22 @@
         </div>
       </div>
     </nav>
-     
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Menu Items</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+          </div>          
+        </div>
+      </div>
+    </div>
     <!-- bg-large devices -->
     <div class="banner-bg d-none d-lg-block pt-2">
       <div class="container">
@@ -78,7 +102,7 @@
           <div class="col-12 col-md-6 pl-4">
             <img src="./assests/vecteezy_chocolate-ice-cream_13442044.png" class="w-100"/>
               <h3 class="text-white">Ice creams made with passion</h3>
-              <button class="button-style mt-4">Check our products</button>
+              <button class="button-style mt-4" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Check our products</button>
           </div>
         </div>
       </div>
@@ -90,7 +114,7 @@
           <div class="col-12">
             <img src="./assests/vecteezy_chocolate-ice-cream_13442044.png" class="w-100"/>
             <h1 class="text-white">Ice creams made with passion</h1>
-            <button class="button-style mt-4">Check our products</button>
+            <button class="button-style mt-4" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Check our products</button>
           </div>
         </div>
       </div>
@@ -200,114 +224,7 @@
           </div>
       </div>
     </div>
-    <!-- products -->
-    <!-- <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <h1 class="menu-section-heading">Explore Menu</h1>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="shadow menu-item-card p-3 mb-3">
-                      
-                      <img src="./assests/cone-menu.jpeg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="shadow menu-item-card p-3 mb-3">
-                      <img src="./assests/ice-menu.jpeg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="menu-item-card shadow p-3 mb-3">
-                      <img src="./assests/vecteezy_view-of-delicious-ice-cream_27614553.jpg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="menu-item-card shadow p-3 mb-3">
-                      <img src="./assests/menu-img.jpg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="menu-item-card shadow p-3 mb-3">
-                      <img src="./assests/img 7.jpg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="menu-item-card shadow p-3 mb-3">
-                      <img src="./assests/img.jpg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="menu-item-card shadow p-3 mb-3">
-                      <img src="./assests/basic_vanilla_ice_cream_mezza (3).jpg" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                  <div class="menu-item-card shadow p-3 mb-3">
-                      <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
-                      <h1 class="menu-card-title">Name</h1>
-                      <a href="" class="menu-item-link">
-                          View All
-                          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div> -->
-    <!-- blog --> 
+    <!-- blog -->
     <div id="blog" class="py-5">
       <div class="container">
           <div class="text-center mb-5">
@@ -317,37 +234,37 @@
           <div class="row">
               <div class="col-md-4 mb-4">
                   <div style="background-color: white;" class="card h-100">
-                      <img src="./assets/img/blog1.jpg" class="card-img-top" alt="Blog 1">
+                      <img src="./assests/blogimg-1.jpg" class="card-img-top" alt="Blog 1">
                       <div class="card-body">
                           <h5 class="card-title">Innovative Ice Cream Flavors</h5>
                           <p class="card-text">Discover the latest innovations in ice cream flavors and how they're transforming the industry.</p>
-                          <a href="#" class="btn btn-primary">Read More</a>
+                          
                       </div>
                   </div>
               </div>
               <div class="col-md-4 mb-4">
                   <div style="background-color: white;" class="card h-100">
-                      <img src="./assets/img/blog1.jpg" class="card-img-top" alt="Blog 2">
+                      <img src="./assests/blogimg-2.jpg" class="card-img-top" alt="Blog 2">
                       <div class="card-body">
                           <h5 class="card-title">Sustainability in Ice Cream Production</h5>
                           <p class="card-text">Learn about our commitment to sustainability and the eco-friendly practices we employ in our ice cream production.</p>
-                          <a href="#" class="btn btn-primary">Read More</a>
+                          
                       </div>
                   </div>
               </div>
               <div class="col-md-4 mb-4">
                   <div style="background-color: white;" class="card h-100">
-                      <img src="./assets/img/blog1.jpg" class="card-img-top" alt="Blog 3">
+                      <img src="./assests/blogimg-3.jpg" class="card-img-top" alt="Blog 3">
                       <div class="card-body">
                           <h5 class="card-title">Trends in Ice Cream Design</h5>
                           <p class="card-text">Stay ahead of the curve with our insights into the latest trends in ice cream design and presentation.</p>
-                          <a href="#" class="btn btn-primary">Read More</a>
+                          
                       </div>
                   </div>
               </div>
           </div>
           <div class="d-flex flex-row justify-content-end">
-            <a class="btn btn-primary" href="./allblogs.html">Show all</a>
+            <a style="text-decoration: none;" class="button-style" href="./allblogs.html">Show all</a>
           </div>
       </div>
   </div>
@@ -481,19 +398,19 @@
           </div>
 
           <div class="col-6 col-md-2 d-flex flex-column mt-4 mb-4">
-            <h5 style="font-size: 16px; color:black" class="mb-3">Flavours</h5>
-            <a style="font-size: 14px; color:black" class="mb-2" href="">Vanilla</a>
-            <a style="font-size: 14px; color:black" class="mb-2" href="">Strawberry</a>
-            <a style="font-size: 14px; color:black" class="mb-2" href="">Pine Apple</a>
-            <a style="font-size: 14px; color:black" class="mb-0" href="">Black Current</a>
+            <h5 style="font-size: 16px; color:black;text-decoration: none;" class="mb-3">Flavours</h5>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-2" href="">Vanilla</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-2" href="">Strawberry</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-2" href="">Pine Apple</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-0" href="">Black Current</a>
           </div>
 
           <div class="col-6 col-md-2 d-flex flex-column mt-4 mb-4">
             <h5 style="font-size: 16px; color:black" class="mb-3">Connect Us</h5>
-            <a style="font-size: 14px; color:black" class="mb-2">Instagram</a>
-            <a style="font-size: 14px; color:black" class="mb-2">Whatsapp</a>
-            <a style="font-size: 14px; color:black" class="mb-2">Facebook</a>
-            <a style="font-size: 14px; color:black" class="mb-0">Twitter</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-2">Instagram</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-2">Whatsapp</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-2">Facebook</a>
+            <a style="font-size: 14px; color:black;text-decoration: none;" class="mb-0">Twitter</a>
           </div>
 
           <div class="col-12 col-md-4 d-flex flex-column mt-4 mb-4">
