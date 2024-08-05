@@ -54,7 +54,9 @@
 <!-- navbar -->
 <nav style="background-color: #91D6CF;" class="navbar navbar-expand-md navbar-light">
   <div class="container">
-    <a class="navbar-brand" href="#">Logo</a>
+    <a class="navbar-brand" href="#">
+      <img src="./assests/images-removebg-preview.png" height="100" width="100"/>
+    </a>
     <div class="d-block d-md-none" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -83,6 +85,7 @@
     <div class="container d-flex flex-row justify-content-center mt-5 mb-5">
         <div class="row">
             <div class="col-12 col-md-6 shadow">
+              <h5 class="mt-3">Distributors form</h5>
                 <form class="p-3">
                     <div class="form-row">
                       <div class="col-12 col-md-6 mb-4">
@@ -103,9 +106,13 @@
                         <input type="text" class="form-control" name="email" required>
                     </div>
                     <div class="form-group mt-4">
-                        <label for="Message">Message</label>
-                        <textarea type="text" class="form-control" name="Message"></textarea>
+                        <label for="district">District</label>
+                        <input type="text" class="form-control" name="district"></input>
                     </div>
+                    <div class="form-group mt-4">
+                      <label for="occupation">Occupation</label>
+                      <input type="text" class="form-control" name="occupation"></input>
+                  </div>
                     <button type="submit" class=" button-style mb-2">Get Enquiry</button>
                 </form>
             </div>

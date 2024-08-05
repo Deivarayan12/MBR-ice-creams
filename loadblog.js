@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 subheading.textContent = text[1];
                 div2.appendChild(subheading);
             }
-            else{
+            else if(text[0]=="i"){
                 let image = document.createElement("img");
                 image.src = text[1];
                 div2.appendChild(image);
