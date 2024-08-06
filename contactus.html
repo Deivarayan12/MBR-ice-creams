@@ -63,28 +63,30 @@
           </svg>
         </div>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-            <a class="nav-link" href="index.html">Home</span></a>
-            <a class="nav-link" href="product.html">Products</a>
-            <div class="dropdown">
-              <a class="dropdown-toggle nav-link" id="dropdownMenuButton" data-toggle="dropdown" href="product.html">
-                Menu
-              </a>
-              <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="item.html">Stuffing Ice Cream</a>
-                <a class="dropdown-item" href="item1.html">Ice Sticks</a>
-                <a class="dropdown-item" href="item3.html">Ice Scoops</a>
-              </div>
-            </div>
-            <a class="nav-link" href="aboutus.html">Abouts Us</a>
-            <a class="nav-link" href="contactus.html">Contact Us</a>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="index.html">Home</span></a>
+        <a class="nav-link" href="product.html">Products</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle nav-link" id="dropdownMenuButton" data-toggle="dropdown" href="product.html">
+            Menu
+          </a>
+          <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="item3.html">Ice Scoops</a>
+            <a class="dropdown-item" href="item.html">Stuffing Ice Cream</a>
+            <a class="dropdown-item" href="item1.html">Ice Sticks</a>
+            <a class="dropdown-item" href="item2.html">Kulfi</a>
+          </div>
         </div>
+        <a class="nav-link" href="aboutus.html">Abouts Us</a>
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </div>
     </div>
   </div>
 </nav>
-    <div class="container d-flex flex-row justify-content-center mt-5 mb-5">
-        <div class="row">
+    <div class="container d-flex flex-column justify-content-center mt-5 mb-5">
+        <div class="row mb-4">
             <div class="col-12 col-md-6 shadow">
+              <h5 class="mt-3">Distributors form</h5>
                 <form class="p-3">
                     <div class="form-row">
                       <div class="col-12 col-md-6 mb-4">
@@ -105,9 +107,13 @@
                         <input type="text" class="form-control" name="email" required>
                     </div>
                     <div class="form-group mt-4">
-                        <label for="Message">Message</label>
-                        <textarea type="text" class="form-control" name="Message"></textarea>
+                        <label for="district">District</label>
+                        <input type="text" class="form-control" name="district"></input>
                     </div>
+                    <div class="form-group mt-4">
+                      <label for="occupation">Occupation</label>
+                      <input type="text" class="form-control" name="occupation"></input>
+                  </div>
                     <button type="submit" class=" button-style mb-2">Get Enquiry</button>
                 </form>
             </div>
@@ -161,6 +167,46 @@
                 
             </div>
         </div>
+
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 shadow d-none d-md-block">
+            <img src="./assests/formimg.jpg" class="w-100 h-100"/>
+          </div>
+          <div class="col-12 col-md-6 shadow">
+            <h5 class="mt-3">Event form(wedding,parties)</h5>
+              <form class="p-3">
+                  <div class="form-row">
+                    <div class="col-12 col-md-6 mb-4">
+                      <label for="firstname">First Name</label>
+                      <input type="text" class="form-control" name="firstname" required>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" class="form-control" name="lastname" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control" name="phone" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" name="email" required>
+                  </div>
+                  <div class="form-group mt-4">
+                      <label for="district">Function Date</label>
+                      <input type="date" class="form-control" name="functiondate"></input>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="occupation">Function Venue</label>
+                    <input type="text" class="form-control" name="functionvenue"></input>
+                </div>
+                  <button type="submit" class=" button-style mb-2">Get Enquiry</button>
+              </form>
+          </div>
+          
+      </div>
+
     </div>
     <div class="delivery-and-payment-section mt-5 pt-5 pb-5" id="deliveryPaymentSection">
       <div class="container">

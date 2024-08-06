@@ -54,6 +54,7 @@ fetch("https://script.google.com/macros/s/AKfycbwZwDaWhg5SrIwCod1nD-ATY4WZwJswXC
             };
 
         });
+        document.getElementById("footerid").style.display="block";
     })
     .catch(error => {
         console.error('Error fetching data:', error);
