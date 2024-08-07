@@ -79,12 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         const listGroupItems = [
-        { subheading: 'Subheading 1', content: 'Content for list item 1', badgeCount: 14 },
-        { subheading: 'Subheading 2', content: 'Content for list item 2', badgeCount: 23 },
-        { subheading: 'Subheading 3', content: 'Content for list item 3', badgeCount: 17 }
+        { subheading: 'Innovative Ice Cream Flavors', content: 'Discover the latest innovations in ice cream flavors and how they are transforming the industry.', badgeCount: './blog1.html' },
+        { subheading: 'Sustainability in Ice Cream Production', content: 'Learn about our commitment to sustainability and the eco-friendly practices we employ in our ice cream production.', badgeCount: './blog2.html'},
+        { subheading: 'Trends in Ice Cream Design', content: 'Stay ahead of the curve with our insights into the latest trends in ice cream design and presentation.', badgeCount: './blog3.html' }
         ];
         listGroupItems.forEach(item => {
-            const listGroupItem = document.createElement('li');
+            const listGroupItem = document.createElement('a');
+            listGroupItem.style.textDecoration="none";
+            listGroupItem.href=item.badgeCount;
             listGroupItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-start');
             const contentContainer = document.createElement('div');
             contentContainer.classList.add('ms-2', 'me-auto');
